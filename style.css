@@ -1,0 +1,112 @@
+body{
+    width: fit-content;
+    display: grid;
+    /* align-content: start;
+    justify-content: start; */
+    /*box-sizing:border-box;*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.main-screen{
+    background-color: antiquewhite;
+    height:max-content;
+    width: 96svw;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 5fr .50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 10fr;
+        align-items: center;
+        border:1px solid red;
+    }
+
+        main>:first-child{
+            display: flex;     
+            align-content: center;
+            justify-content: center;
+            border: 1px solid yellowgreen;
+        }
+
+            #addBook{
+                border-radius: 8px;
+                margin: 20px;
+            }
+
+        main>:last-child{
+            border: 1px solid yellowgreen; 
+            padding: 50px;
+            margin: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,200px);
+            grid-template-rows: 300px;
+            grid-auto-rows: 300px;
+            gap: 100px;
+            border-radius: 20px;
+            text-align: center;  
+            justify-content: center;          
+        }    
+
+        .books>div{
+            border: 1px solid red;
+            display: grid;
+            align-content: center;
+            line-height: 1.5cm;
+            border-radius: 20px;
+        }
+            .rmv{
+                margin: 10px;
+            }
+
+    footer{
+        text-align: center;
+    }
+.blur{
+    display: none;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #000000;
+    filter: opacity(80%); 
+    border: 1px solid rgb(0, 0, 0);
+}
+.popUps{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: none;
+    z-index: 1;
+    align-self: start;
+    justify-self: start;
+}
+    form.addBook{
+        width: 100%;
+        display: grid;
+        align-content: start;
+        justify-content: center; 
+        gap: .5em;
+        grid-template-rows: max-content;
+        margin-top: 25%;      
+    }
+
+        form>:nth-child(n){
+             
+        }
+
+
+.vanich{
+    display: ;
+}
+    
